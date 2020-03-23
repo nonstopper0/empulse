@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-import img from './fullsize.jpg'
+import img from './varis.jpg'
 import logo from './empulse.png'
 
 export default class Team extends React.Component {
@@ -20,6 +20,7 @@ export default class Team extends React.Component {
 const styles = {
     container: {
         position: 'relative',
+        minWidth: '1000px'
     },
     maintext: {
         textAlign: 'center',

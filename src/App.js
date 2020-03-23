@@ -1,13 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
 import {Route, Switch, BrowserRouter} from 'react-router-dom'
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
-=======
-import {BroserRouter, Route, Switch, BrowserRouter} from 'react-router-dom'
-import InstagramIcon from '../build/node_modules/@material-ui/icons/Instagram';
-import YouTubeIcon from '../build/node_modules/@material-ui/icons/YouTube';
->>>>>>> parent of d1c5e6f... changes
 import logo from './empulse.png'
 import Home from './Home.js'
 
@@ -25,6 +19,8 @@ export default class App extends React.Component {
             <a style={styles.navA} href="/empulse">HOME</a>
             <a style={styles.navA} target="_blank">ASSETTO CORSA</a>
             <a style={styles.navA} href='/empulse/team'>THE TEAM</a>
+            <a><InstagramIcon style={styles.icon}></InstagramIcon></a>
+            <a><YouTubeIcon style={styles.icon}></YouTubeIcon></a>
           </nav>
         </header>
       </BrowserRouter>
@@ -40,6 +36,7 @@ const styles = {
     backgroundColor: 'rgb(0,0,0,.8)',
     width: '100%',
     top: 0,
+    minWidth: '1000px'
   },
   logo: {
     position: 'relative',
