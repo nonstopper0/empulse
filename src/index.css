@@ -5,9 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(18,18,18);
-  font-family: 'Roboto Mono', monospace;
-  font-family: 'Rubik', sans-serif;
 }
 
 code {
