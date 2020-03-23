@@ -1,6 +1,7 @@
 import React from 'react';
 import {BroserRouter, Route, Switch, BrowserRouter} from 'react-router-dom'
-import './App.css'
+import InstagramIcon from '../build/node_modules/@material-ui/icons/Instagram';
+import YouTubeIcon from '../build/node_modules/@material-ui/icons/YouTube';
 import logo from './empulse.png'
 import Home from './Home.js'
 
@@ -17,7 +18,9 @@ export default class App extends React.Component {
           <nav style={styles.nav}>
             <a style={styles.navA} href="/empulse">HOME</a>
             <a style={styles.navA} target="_blank">ASSETTO CORSA</a>
-            <a style={styles.navA} href='/empulse/team'>THE TEAM</a>
+            <a style={styles.navA} href='/empulse/team'>THE GARAGE</a>
+            <a><InstagramIcon style={styles.icon}></InstagramIcon></a>
+            <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank"><YouTubeIcon style={styles.icon}></YouTubeIcon></a>
           </nav>
         </header>
       </BrowserRouter>
@@ -30,9 +33,10 @@ const styles = {
     zIndex: 2,
     position: 'absolute',
     height: '60px',
-    backgroundColor: 'rgb(0,0,0,.8)',
     width: '100%',
+    backgroundColor: 'rgb(0,0,0,.7)',
     top: 0,
+    minWidth: '1000px'
   },
   logo: {
     position: 'relative',
@@ -45,7 +49,7 @@ const styles = {
     display: 'flex',
     top: 20,
     right: '3%',
-    width: '400px',
+    width: '500px',
   },
   navA : {
     textDecoration: 'none',
@@ -56,4 +60,9 @@ const styles = {
   p: {
     fontSize: '400px'
   },
+  icon: {
+    color: 'white',
+    fontSize: '20px',
+    marginLeft: '35px'
+  }
 }

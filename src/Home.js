@@ -1,16 +1,12 @@
 import React from 'react';
-import './App.css'
-import img from './fullsize.jpg'
-import logo from './empulse.png'
+import Roller from './Roller.jpg'
 
 export default class Team extends React.Component {
     render() {
         return (
             <div style={styles.container}>
-                <img src={img} style={styles.img}></img>
+                <img src={Roller} style={styles.img}></img>
                 <div style={styles.maintext}>
-                    <p>Welcome to Empulse Racing</p>
-                    <button style={styles.button}>Learn More...</button>
                 </div>
             </div>
         )
@@ -19,22 +15,19 @@ export default class Team extends React.Component {
 
 const styles = {
     container: {
-        position: 'relative',
+        position: 'relative'
     },
     maintext: {
-        textAlign: 'center',
+        textAlign: 'left',
         position: 'absolute', 
-        top: '50%', 
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        fontSize: 16,
-        fontWeight: '700',
-        color: 'white', 
+        top: '70%', 
+        left: '60%',
     },
     img: {
         backgroundColor: 'black',
-        opacity: '.9',
-        width: '100%'
+        opacity: '1',
+        width: '100%',
+        overflow: 'hidden',
     },
     button: {
         backgroundColor: 'rgb(150,0,0)',
