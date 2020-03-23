@@ -1,12 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
 import {Route, Switch, BrowserRouter} from 'react-router-dom'
-import InstagramIcon from '../build/node_modules/@material-ui/icons/Instagram';
-import YouTubeIcon from '../build/node_modules/@material-ui/icons/YouTube';
-=======
-import {BroserRouter, Route, Switch, BrowserRouter} from 'react-router-dom'
-import './App.css'
->>>>>>> parent of 955973f... changing the layout
+import InstagramIcon from '@material-ui/icons/Instagram';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 import logo from './empulse.png'
 import Home from './Home.js'
 
