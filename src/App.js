@@ -1,5 +1,5 @@
 import React from 'react';
-import {BroserRouter, Route, Switch, BrowserRouter} from 'react-router-dom'
+import {Route, Switch, BrowserRouter} from 'react-router-dom'
 import InstagramIcon from '../build/node_modules/@material-ui/icons/Instagram';
 import YouTubeIcon from '../build/node_modules/@material-ui/icons/YouTube';
 import logo from './empulse.png'
