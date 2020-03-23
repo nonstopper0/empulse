@@ -5,9 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(18,18,18);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.logohover:hover {
+  transition: 2s ease;
+  transform: scale(1.1)
+}
+
+.logohover {
+  transition: 1s ease;
 }

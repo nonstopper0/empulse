@@ -4,6 +4,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import logo from './empulse.png'
 import Home from './Home.js'
+import Team from './Team.js'
 
 export default class App extends React.Component {
   
@@ -12,17 +13,21 @@ export default class App extends React.Component {
       <BrowserRouter>
           <Switch>
             <Route path="/empulse" component={Home} exact/>
+            <Route path="/empulse/team" component={Team} exact/>
           </Switch>
         <header style={styles.headercontainer}>
           <img src={logo} style={styles.logo} alt="empulse logo"></img>
           <nav style={styles.nav}>
             <a style={styles.navA} href="/empulse">HOME</a>
             <a style={styles.navA} target="_blank">ASSETTO CORSA</a>
-            <a style={styles.navA} href='/empulse/team'>THE TEAM</a>
+            <a style={styles.navA} href='/empulse/team'>THE GARAGE</a>
             <a><InstagramIcon style={styles.icon}></InstagramIcon></a>
-            <a><YouTubeIcon style={styles.icon}></YouTubeIcon></a>
+            <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank"><YouTubeIcon style={styles.icon}></YouTubeIcon></a>
           </nav>
         </header>
+        <footer style={styles.footer}>
+          <small>&copy; Copyright 2020. Empulse Racing</small>
+        </footer>
       </BrowserRouter>
     );
   }
@@ -49,7 +54,7 @@ const styles = {
     display: 'flex',
     top: 20,
     right: '3%',
-    width: '400px',
+    width: '550px',
   },
   navA : {
     textDecoration: 'none',
@@ -59,5 +64,17 @@ const styles = {
   },
   p: {
     fontSize: '400px'
+  },
+  icon : {
+    color: 'white',
+    fontSize: 20,
+    marginLeft: '35px',
+  },
+  footer: {
+    height: '100px',
+    padding: '100px',
+    minWidth: '1000px',
+    textAlign: 'center',
+    color: 'grey'
   },
 }
