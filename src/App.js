@@ -9,6 +9,9 @@ export default class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
+          <Switch>
+            <Route path="/empulse" component={Home} exact/>
+          </Switch>
         <header style={styles.headercontainer}>
           <img src={logo} style={styles.logo} alt="empulse logo"></img>
           <nav style={styles.nav}>
@@ -16,9 +19,6 @@ export default class App extends React.Component {
             <a style={styles.navA} target="_blank">ASSETTO CORSA</a>
             <a style={styles.navA} href='/empulse/team'>THE TEAM</a>
           </nav>
-          <Switch>
-            <Route path="/empulse" component={Home} exact/>
-          </Switch>
         </header>
       </BrowserRouter>
     );
@@ -27,10 +27,10 @@ export default class App extends React.Component {
 
 const styles = {
   headercontainer: {
-    'z-index': 2,
+    zIndex: 2,
     position: 'absolute',
-    backgroundColor: 'rgb(0,0,0,.1)',
     height: '60px',
+    backgroundColor: 'rgb(0,0,0,.8)',
     width: '100%',
     top: 0,
   },
@@ -50,7 +50,7 @@ const styles = {
   navA : {
     textDecoration: 'none',
     fontSize: '17px',
-    color: 'rgb(200,200,200)',
+    color: 'white',
     marginLeft: '35px'
   },
   p: {
