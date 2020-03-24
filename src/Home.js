@@ -5,6 +5,9 @@ import drift from './drift.png'
 import gridlife from './gridlife.jpg'
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import FlagIcon from '@material-ui/icons/Flag';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+const Scroll = require('react-scroll')
+const scroll = Scroll.animateScroll;
 
 export default class Team extends React.Component {
     constructor() {
@@ -22,11 +25,12 @@ export default class Team extends React.Component {
         return (
             <div>
                 <div style={styles.container}>
-                    <img src={img} style={styles.img}></img>
+                    <img src={img} id="img" style={styles.img}></img>
                     <div style={styles.maintext}>
                         <img className="logohover" onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse} style={styles.logo} src={logo}></img>
                         { !this.state.hover ? <p className="popin" style={styles.popup}>Driver focused, People oriented...</p> : null}
                     </div>
+                    <div onClick={()=>scroll.scrollTo(document.getElementById('img').clientHeight)} style={{position: 'absolute', top: '94%', left: '49%', color: 'white'}}><ExpandMoreIcon style={{fontSize: 40}}/></div>
                 </div>
                 <div style={styles.content1}>
                 <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><DoubleArrowIcon flip style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
@@ -74,7 +78,7 @@ const styles = {
     img: {
         opacity: '1',
         width: '100%',
-        maxHeight: '1000px',
+        maxHeight: '100vh',
         objectFit: 'cover',
     },
     logo: {

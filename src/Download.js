@@ -10,7 +10,7 @@ export default class Team extends React.Component {
             <div style={styles.container}>
                 <header style={{textAlign: 'center', color: 'white'}}>
                     <h1>DOWNLOAD</h1>
-                    <p>To play on our custom server you need to have custom files! </p>
+                    <p>To play on our custom server you need to have custom files! See the links below for both the track and vehicle files</p>
                 </header>
                 <div style={styles.breaker}><DoubleArrowIcon style={{position: 'relative', left: '49%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
                 <div style={styles.row}>
@@ -41,7 +41,7 @@ const styles = {
         minWidth: '1000px',
         maxWidth: '1500px',
         margin: '0 auto',
-        height: '1000px',
+        height: '800px',
     }, 
     row: {
         textAlign: 'center',

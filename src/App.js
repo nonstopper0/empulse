@@ -6,6 +6,7 @@ import logo from './empulse.png'
 import Home from './Home.js'
 import Team from './Team.js'
 import Download from './Download.js'
+import { rgbToHex } from '@material-ui/core';
 
 export default class App extends React.Component {
   constructor() {
