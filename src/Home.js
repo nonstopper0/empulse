@@ -3,6 +3,7 @@ import img from './varis.jpg'
 import logo from './empulse.png'
 import drift from './drift.png'
 import gridlife from './gridlife.jpg'
+import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 
 export default class Team extends React.Component {
     constructor() {
@@ -23,10 +24,11 @@ export default class Team extends React.Component {
                 <img src={img} style={styles.img}></img>
                 <div style={styles.maintext}>
                     <img className="logohover" onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse} style={styles.logo} src={logo}></img>
-                    { this.state.hover ? <p className="popin" style={styles.popup}>Driving Reimagined...</p> : null}
+                    { !this.state.hover ? <p className="popin" style={styles.popup}>Driver focused, People oriented...</p> : null}
                 </div>
             </div>
             <div style={styles.content1}>
+            <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><DoubleArrowIcon flip style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
                 <div style={styles.row}>
                     <div style={{display: 'flex', justifyContent: 'flex-start'}}>
                         <img src={gridlife} style={{width: '400px', marginRight: '20px'}} alt="drift"></img>
@@ -37,7 +39,7 @@ export default class Team extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}></div>
+                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><DoubleArrowIcon style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
                 <div style={styles.row}>
                     <div style={{display: 'flex', justifyContent: 'flex-end'}}>
                         <div>
@@ -48,6 +50,7 @@ export default class Team extends React.Component {
                         <img src={drift} style={{width: '400px', marginLeft: '20px'}} alt="drift"></img>
                     </div>
                 </div>
+                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><DoubleArrowIcon flip style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
             </div>
             </div>
         )
@@ -103,7 +106,7 @@ const styles = {
         width: '100%',
         maxWidth: '1500px',
         minWidth: '1000px',
-        height: '700px',
+        height: '800px',
         backgroundColor: 'rgb(18,18,18)',
     },
     row: {
