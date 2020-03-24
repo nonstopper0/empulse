@@ -25,7 +25,7 @@ code {
 }
 
 .nav {
-  animation: navLoad 1.5s ease;
+  animation: navLoad 2s ease-out;
 }
 
 .navB {
@@ -34,6 +34,12 @@ code {
 
 .popin {
   animation: textLoad 1.5s;
+}
+
+.navitem {
+  transition: 1s ease;
+  text-decoration: none;
+  color: white;
 }
 
 .navitem:hover {
@@ -57,7 +63,7 @@ code {
 @keyframes navLoad {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-50px);
   } to {
     opacity: 1;
   }

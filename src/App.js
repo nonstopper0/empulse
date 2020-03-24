@@ -5,6 +5,7 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import logo from './empulse.png'
 import Home from './Home.js'
 import Team from './Team.js'
+import Download from './Download.js'
 
 export default class App extends React.Component {
   constructor() {
@@ -22,7 +23,8 @@ export default class App extends React.Component {
     return (
       <HashRouter basename="/">
             <Route exact path="/" component={Home} />
-            <Route path="/team" component={Team}/>
+            <Route exact path="/team" component={Team}/>
+            <Route exact path="/ac/download" component={Download}/>
         <header style={styles.headercontainer}>
           <img src={logo} style={styles.logo} alt="empulse logo"></img>
           <nav className='nav' style={styles.nav}>
@@ -79,13 +81,11 @@ const styles = {
   navA : {
     textDecoration: 'none',
     fontSize: '17px',
-    color: 'white',
     marginLeft: '35px',
   },
   navB : {
     textDecoration: 'none',
     fontSize: '17px',
-    color: 'white',
     width: '100%',
     margin: '3px'
   },
@@ -113,9 +113,9 @@ const styles = {
     justifyContent: 'center',
     alignContent: 'flex-start',
     top: 35,
-    left: 105,
+    left: 115,
     backgroundColor: 'rgb(38,38,38)',
-    height: '70px',
+    height: '60px',
     width: '160px',
     overflow: 'hidden',
     textAlign: 'center',
