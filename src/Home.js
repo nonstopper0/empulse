@@ -20,38 +20,38 @@ export default class Team extends React.Component {
     render() {
         return (
             <div>
-            <div style={styles.container}>
-                <img src={img} style={styles.img}></img>
-                <div style={styles.maintext}>
-                    <img className="logohover" onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse} style={styles.logo} src={logo}></img>
-                    { !this.state.hover ? <p className="popin" style={styles.popup}>Driver focused, People oriented...</p> : null}
-                </div>
-            </div>
-            <div style={styles.content1}>
-            <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><DoubleArrowIcon flip style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
-                <div style={styles.row}>
-                    <div style={{display: 'flex', justifyContent: 'flex-start'}}>
-                        <img src={gridlife} style={{width: '400px', marginRight: '20px'}} alt="drift"></img>
-                        <div>
-                            <h2 style={{color: 'white', fontWeight: 'bold'}}>A team focused on Motorsport</h2>
-                            <p style={styles.contentText}>Based in Colorado, Empulse is a community of drivers interested in using their cars to the fullest extent. 
-                            You can find Empulse at racetracks around Colorado including but not limited to: <span style={{fontWeight: 'bold'}}>High Plains Raceway, Pikes Peak International Raceway, and IMI motorsports complex</span></p>
-                        </div>
+                <div style={styles.container}>
+                    <img src={img} style={styles.img}></img>
+                    <div style={styles.maintext}>
+                        <img className="logohover" onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse} style={styles.logo} src={logo}></img>
+                        { !this.state.hover ? <p className="popin" style={styles.popup}>Driver focused, People oriented...</p> : null}
                     </div>
                 </div>
-                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><DoubleArrowIcon style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
-                <div style={styles.row}>
-                    <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                        <div>
-                            <h2 style={{color: 'white', fontWeight: 'bold'}}>What we do</h2>
-                            <p style={styles.contentText}>Community is of the highest importance within Empulse. 
-                            When we arent there in person, we are online connecting with our members through youtube and simulations like Assetto Corsa. Interested in being a part of our Assetto Corsa community? Click the Assetto corsa tab above!</p>
-                        </div>
-                        <img src={drift} style={{width: '400px', marginLeft: '20px'}} alt="drift"></img>
-                    </div>
-                </div>
+                <div style={styles.content1}>
                 <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><DoubleArrowIcon flip style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
-            </div>
+                    <div style={styles.row}>
+                        <div style={{display: 'flex', justifyContent: 'flex-start'}}>
+                            <img src={gridlife} style={{width: '400px', marginRight: '20px'}} alt="drift"></img>
+                            <div>
+                                <h2 style={{color: 'white', fontWeight: 'bold'}}>A team focused on Motorsport</h2>
+                                <p style={styles.contentText}>Based in Colorado, Empulse is a community of drivers interested in using their cars to the fullest extent. 
+                                You can find Empulse at racetracks around Colorado including but not limited to: <span style={{fontWeight: 'bold'}}>High Plains Raceway, Pikes Peak International Raceway, and IMI motorsports complex</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><DoubleArrowIcon style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
+                    <div style={styles.row}>
+                        <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+                            <div>
+                                <h2 style={{color: 'white', fontWeight: 'bold'}}>What we do</h2>
+                                <p style={styles.contentText}>Community is of the highest importance within Empulse. 
+                                When we arent there in person, we are online connecting with our members through youtube and simulations like Assetto Corsa. Interested in being a part of our Assetto Corsa community? Click the Assetto corsa tab above!</p>
+                            </div>
+                            <img src={drift} style={{width: '400px', marginLeft: '20px'}} alt="drift"></img>
+                        </div>
+                    </div>
+                    <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><DoubleArrowIcon flip style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
+                </div>
             </div>
         )
     }
@@ -59,8 +59,9 @@ export default class Team extends React.Component {
 
 const styles = {
     container: {
+        zIndex: 2,
         position: 'relative',
-        minWidth: '1000px'
+        minWidth: '1000px',
     },
     maintext: {
         textAlign: 'center',
@@ -118,5 +119,15 @@ const styles = {
     contentText: {
         color: 'white',
         fontSize: 15
+    },
+    blob: {
+        zIndex: 3,
+        position: 'absolute',
+
+        top: 100,
+        height: 1000,
+        width: 1000,
+        backgroundColor: 'white',
+        transform: 'skew(80deg)'
     }
 }
