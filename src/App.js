@@ -55,9 +55,9 @@ export default class App extends React.Component {
 const styles = {
   headercontainer: {
     zIndex: 2,
-    position: 'absolute',
+    position: 'fixed',
     height: '60px',
-    backgroundColor: 'rgb(28,28,28)',
+    backgroundColor: 'rgb(38,38,38)',
     width: '100%',
     top: 0,
     minWidth: '1000px'
@@ -71,7 +71,7 @@ const styles = {
   nav : {
     position: 'absolute',
     display: 'flex',
-    top: 5,
+    top: 3,
     right: '3%',
     width: '550px',
     alignItems: 'center'
@@ -86,8 +86,8 @@ const styles = {
     textDecoration: 'none',
     fontSize: '17px',
     color: 'white',
-    marginTop: 5,
     width: '100%',
+    margin: '3px'
   },
   p: {
     fontSize: '400px'
@@ -105,6 +105,7 @@ const styles = {
     color: 'grey'
   },
   menu: {
+    paddingTop: '5px',
     display: 'flex',
     flexWrap: 'wrap',
     position: 'absolute',
@@ -112,15 +113,15 @@ const styles = {
     alignContent: 'flex-start',
     top: 35,
     left: 105,
-    backgroundColor: 'rgb(28,28,28)',
-    height: '90px',
+    backgroundColor: 'rgb(38,38,38)',
+    height: '70px',
     width: '160px',
     overflow: 'hidden',
     textAlign: 'center',
-    borderRadius: 10
+    borderRadius: 5
   },
   link: {
     textDecoration: 'none', 
-    color: 'white'
+    color: 'white',
   }
 }
