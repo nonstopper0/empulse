@@ -6,6 +6,7 @@ import logo from './empulse.png'
 import Home from './Home.js'
 import Team from './Team.js'
 import Download from './Download.js'
+import Gallery from './Gallery.js'
 import { rgbToHex } from '@material-ui/core';
 
 export default class App extends React.Component {
@@ -26,6 +27,7 @@ export default class App extends React.Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/team" component={Team}/>
             <Route exact path="/ac/download" component={Download}/>
+            <Route exact path="/ac/gallery" component={Gallery}/>
         <header style={styles.headercontainer}>
           <img src={logo} style={styles.logo} alt="empulse logo"></img>
           <nav className='nav' style={styles.nav}>
