@@ -45,7 +45,7 @@ export default class App extends React.Component {
         
         </header>
         <footer style={styles.footer}>
-          <small>&copy; Copyright 2020. Empulse Racing</small>
+          <small>&copy; Copyright 2020. Nathaniel Redmon</small>
         </footer>
     </HashRouter>
     );
@@ -60,7 +60,7 @@ const styles = {
     backgroundColor: 'rgb(38,38,38)',
     width: '100%',
     top: 0,
-    minWidth: '1000px'
+    minWidth: '1000px',
   },
   logo: {
     position: 'relative',
@@ -98,8 +98,9 @@ const styles = {
     marginLeft: '35px',
   },
   footer: {
+    margin: '0 auto',
     height: '100px',
-    padding: '100px',
+    paddingTop: '100px',
     minWidth: '1000px',
     textAlign: 'center',
     color: 'grey'

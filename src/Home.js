@@ -29,14 +29,21 @@ export default class Team extends React.Component {
             <div style={styles.content1}>
                 <div style={styles.row}>
                     <div style={{display: 'flex', justifyContent: 'flex-start'}}>
-                        <img src={gridlife} style={{width: '400px', marginRight: '10px'}} alt="drift"></img>
-                        <h2 style={{color: 'white'}}>A team focused on Motorsport</h2>
+                        <img src={gridlife} style={{width: '400px', marginRight: '20px'}} alt="drift"></img>
+                        <div>
+                            <h2 style={{color: 'white', fontWeight: 'bold'}}>A team focused on Motorsport</h2>
+                            <p style={styles.contentText}>Based in Colorado, Empulse is a community of drivers interested in using their cars to the fullest extent. 
+                            You can find Empulse at racetracks around Colorado including but not limited to: <span style={{fontWeight: 'bold'}}>High Plains Raceway, Pikes Peak International Raceway, and IMI motorsports complex</span></p>
+                        </div>
                     </div>
                 </div>
                 <div style={styles.row}>
                     <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                        <h2 style={{color: 'white'}}>Who we are</h2>
-                        <img src={drift} style={{width: '400px', marginLeft: '10px'}} alt="drift"></img>
+                        <div>
+                            <h2 style={{color: 'white', fontWeight: 'bold'}}>What we do</h2>
+                            <p style={styles.contentText}>Hello there</p>
+                        </div>
+                        <img src={drift} style={{width: '400px', marginLeft: '20px'}} alt="drift"></img>
                     </div>
                 </div>
             </div>
@@ -93,6 +100,7 @@ const styles = {
         flexWrap: 'wrap',
         width: '100%',
         maxWidth: '1500px',
+        minWidth: '1000px',
         height: '1000px',
         backgroundColor: 'rgb(18,18,18)'
     },
@@ -102,4 +110,8 @@ const styles = {
         width: '100%',
         padding: '100px'
     },
+    contentText: {
+        color: 'white',
+        fontSize: 15
+    }
 }
