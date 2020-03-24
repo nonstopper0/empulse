@@ -37,11 +37,13 @@ export default class Team extends React.Component {
                         </div>
                     </div>
                 </div>
+                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}></div>
                 <div style={styles.row}>
                     <div style={{display: 'flex', justifyContent: 'flex-end'}}>
                         <div>
                             <h2 style={{color: 'white', fontWeight: 'bold'}}>What we do</h2>
-                            <p style={styles.contentText}>Hello there</p>
+                            <p style={styles.contentText}>Community is of the highest importance within Empulse. 
+                            When we arent there in person, we are online connecting with our members through youtube and simulations like Assetto Corsa. Interested in being a part of our Assetto Corsa community? Click the Assetto corsa tab above!</p>
                         </div>
                         <img src={drift} style={{width: '400px', marginLeft: '20px'}} alt="drift"></img>
                     </div>
@@ -101,14 +103,14 @@ const styles = {
         width: '100%',
         maxWidth: '1500px',
         minWidth: '1000px',
-        height: '1000px',
-        backgroundColor: 'rgb(18,18,18)'
+        height: '700px',
+        backgroundColor: 'rgb(18,18,18)',
     },
     row: {
+        padding: '0px 100px 0px 100px',
         height: 'fit-content',
         margin: 10,
         width: '100%',
-        padding: '100px'
     },
     contentText: {
         color: 'white',
