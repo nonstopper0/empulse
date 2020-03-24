@@ -27,13 +27,16 @@ code {
   animation: navLoad 1.5s ease;
 }
 
+.navB {
+  animation: logoLoad 2s ease;
+}
+
 .popin {
   animation: textLoad 1.5s;
 }
 
 .navitem:hover {
   transition: 1s ease;
-  border-bottom: 2px solid white;
   transform: scaleX(1.1);
 }
 
@@ -70,10 +73,6 @@ code {
 
 @keyframes menuLoad {
   from {
-    opacity: 0;
-    transform: translateY(-20px)
-  } to {
-    opacity: 1;
-    transform: translateY(0px)
+    height: 0px
   }
 }

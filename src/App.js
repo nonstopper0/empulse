@@ -24,14 +24,23 @@ export default class App extends React.Component {
           <Switch>
             <Route path="/empulse" component={Home} exact/>
             <Route path="/empulse/team" component={Team} exact/>
+            <Route path="/empulse/ac/download" exact />
+            <Route path="/empulse/ac/download" exact />
           </Switch>
         <header style={styles.headercontainer}>
           <img src={logo} style={styles.logo} alt="empulse logo"></img>
           <nav className='nav' style={styles.nav}>
             <a className="navitem" style={styles.navA} href="/empulse">HOME</a>
             <div onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse}>
-              { this.state.hover ? <div className='menu' style={styles.menu}></div> : null}
-              <a className="navitem" style={styles.navA} target="_blank">ASSETTO CORSA</a>
+              { this.state.hover ? 
+              <div className='menu' style={styles.menu}>
+                <a className="navB" href="/empulse/ac/download"style={styles.navB}>DOWNLOAD</a>
+                <a className="navB" href="/empulse/ac/gallery"style={styles.navB}>GALLERY</a>
+              </div> 
+              : 
+              null
+              }
+              <a className="navitem" style={styles.navA} target="_blank">ASSETTO <span style={{color: 'red'}}>CORSA</span></a>
             </div>
             <a className="navitem" style={styles.navA} href='/empulse/team'>THE GARAGE</a>
             <a><InstagramIcon style={styles.icon}></InstagramIcon></a>
@@ -76,6 +85,13 @@ const styles = {
     color: 'white',
     marginLeft: '35px'
   },
+  navB : {
+    textDecoration: 'none',
+    fontSize: '17px',
+    color: 'white',
+    marginTop: 10,
+    width: '100%',
+  },
   p: {
     fontSize: '400px'
   },
@@ -92,10 +108,18 @@ const styles = {
     color: 'grey'
   },
   menu: {
+    display: 'flex',
+    flexWrap: 'wrap',
     position: 'absolute',
+    justifyContent: 'center',
+    alignContent: 'flex-start',
     top: 20,
-    backgroundColor: 'white',
-    height: '400px',
-    width: '300px',
+    left: 105,
+    backgroundColor: 'rgb(28,28,28)',
+    height: '80px',
+    width: '160px',
+    overflow: 'hidden',
+    textAlign: 'center',
+    borderRadius: 20
   }
 }
