@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch, BrowserRouter} from 'react-router-dom'
+import {Route, Switch, HashRouter, BrowserRouter, Link} from 'react-router-dom'
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import logo from './empulse.png'
@@ -20,38 +20,34 @@ export default class App extends React.Component {
   }
   render() {
     return (
-      <BrowserRouter>
-          <Switch>
-            <Route path="/empulse" component={Home} exact/>
-            <Route path="/empulse/team" component={Team} exact/>
-            <Route path="/empulse/ac/download" exact />
-            <Route path="/empulse/ac/download" exact />
-          </Switch>
+      <HashRouter basename="/">
+            <Route exact path="/" component={Home} />
+            <Route path="/team" component={Team}/>
         <header style={styles.headercontainer}>
           <img src={logo} style={styles.logo} alt="empulse logo"></img>
           <nav className='nav' style={styles.nav}>
-            <a className="navitem" style={styles.navA} href="/empulse">HOME</a>
-            <div onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse}>
-              { this.state.hover ? 
-              <div className='menu' style={styles.menu}>
-                <a className="navB" href="/empulse/ac/download"style={styles.navB}>DOWNLOAD</a>
-                <a className="navB" href="/empulse/ac/gallery"style={styles.navB}>GALLERY</a>
-              </div> 
-              : 
-              null
-              }
-              <a className="navitem" style={styles.navA} target="_blank">ASSETTO <span style={{color: 'red'}}>CORSA</span></a>
-            </div>
-            <a className="navitem" style={styles.navA} href='/empulse/team'>THE GARAGE</a>
-            <a><InstagramIcon style={styles.icon}></InstagramIcon></a>
-            <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank"><YouTubeIcon style={styles.icon}></YouTubeIcon></a>
+              <p className="navitem" style={styles.navA}><Link to="/" style={styles.link}>HOME</Link></p>
+              <div onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse}>
+                  { this.state.hover ? 
+                  <div className='menu' style={styles.menu}>
+                      <p className="navB" style={styles.navB}><Link to="/ac/download" style={styles.link}>DOWNLOAD</Link></p>
+                      <p className="navB" style={styles.navB}><Link to="/ac/gallery" style={styles.link}>GALLERY</Link></p>
+                  </div> 
+                  : 
+                  null
+                  }
+                  <p className="navitem" style={styles.navA} target="_blank">ASSETTO <span style={{color: 'red'}}>CORSA</span></p>
+              </div>
+              <p className="navitem" style={styles.navA}><Link to="/team" style={styles.link}>THE GARAGE</Link></p>
+              <a><InstagramIcon style={styles.icon}></InstagramIcon></a>
+              <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank"><YouTubeIcon style={styles.icon}></YouTubeIcon></a>
           </nav>
         
         </header>
         <footer style={styles.footer}>
           <small>&copy; Copyright 2020. Empulse Racing</small>
         </footer>
-      </BrowserRouter>
+    </HashRouter>
     );
   }
 }
@@ -75,21 +71,22 @@ const styles = {
   nav : {
     position: 'absolute',
     display: 'flex',
-    top: 20,
+    top: 5,
     right: '3%',
     width: '550px',
+    alignItems: 'center'
   },
   navA : {
     textDecoration: 'none',
     fontSize: '17px',
     color: 'white',
-    marginLeft: '35px'
+    marginLeft: '35px',
   },
   navB : {
     textDecoration: 'none',
     fontSize: '17px',
     color: 'white',
-    marginTop: 10,
+    marginTop: 5,
     width: '100%',
   },
   p: {
@@ -113,13 +110,17 @@ const styles = {
     position: 'absolute',
     justifyContent: 'center',
     alignContent: 'flex-start',
-    top: 20,
+    top: 35,
     left: 105,
     backgroundColor: 'rgb(28,28,28)',
-    height: '80px',
+    height: '90px',
     width: '160px',
     overflow: 'hidden',
     textAlign: 'center',
-    borderRadius: 20
+    borderRadius: 10
+  },
+  link: {
+    textDecoration: 'none', 
+    color: 'white'
   }
 }
