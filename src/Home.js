@@ -20,7 +20,7 @@ export default class Team extends React.Component {
                 <img src={img} style={styles.img}></img>
                 <div style={styles.maintext}>
                     <img className="logohover" onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse} style={styles.logo} src={logo}></img>
-                    { this.state.hover ? <p style={styles.popup}>Driving Reimagined</p> : null}
+                    { this.state.hover ? <p className="popin" style={styles.popup}>Driving Reimagined...</p> : null}
                 </div>
             </div>
         )
@@ -41,7 +41,7 @@ const styles = {
     },
     img: {
         backgroundColor: 'black',
-        opacity: '.9',
+        opacity: '.8',
         width: '100%',
     },
     logo: {
@@ -59,5 +59,12 @@ const styles = {
         borderTop: '3px solid rgb(200,0,0)',
         padding: '8px',
         fontSize: '15px',
+    },
+    popup: {
+        fontWeight: 'bold',
+        position: 'absolute',
+        bottom: 20,
+        left: 20,
+        color: 'white',
     }
 }

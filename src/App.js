@@ -7,7 +7,17 @@ import Home from './Home.js'
 import Team from './Team.js'
 
 export default class App extends React.Component {
-  
+  constructor() {
+    super()
+    this.state = {
+      hover: false
+    }
+  }
+  handleMouse = () => {
+    this.setState({
+        hover: !this.state.hover
+    })
+  }
   render() {
     return (
       <BrowserRouter>
@@ -17,13 +27,17 @@ export default class App extends React.Component {
           </Switch>
         <header style={styles.headercontainer}>
           <img src={logo} style={styles.logo} alt="empulse logo"></img>
-          <nav style={styles.nav}>
-            <a style={styles.navA} href="/empulse">HOME</a>
-            <a style={styles.navA} target="_blank">ASSETTO CORSA</a>
-            <a style={styles.navA} href='/empulse/team'>THE GARAGE</a>
+          <nav className='nav' style={styles.nav}>
+            <a className="navitem" style={styles.navA} href="/empulse">HOME</a>
+            <div onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse}>
+              { this.state.hover ? <div className='menu' style={styles.menu}></div> : null}
+              <a className="navitem" style={styles.navA} target="_blank">ASSETTO CORSA</a>
+            </div>
+            <a className="navitem" style={styles.navA} href='/empulse/team'>THE GARAGE</a>
             <a><InstagramIcon style={styles.icon}></InstagramIcon></a>
             <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank"><YouTubeIcon style={styles.icon}></YouTubeIcon></a>
           </nav>
+        
         </header>
         <footer style={styles.footer}>
           <small>&copy; Copyright 2020. Empulse Racing</small>
@@ -38,7 +52,7 @@ const styles = {
     zIndex: 2,
     position: 'absolute',
     height: '60px',
-    backgroundColor: 'rgb(0,0,0,.8)',
+    backgroundColor: 'rgb(28,28,28)',
     width: '100%',
     top: 0,
     minWidth: '1000px'
@@ -77,4 +91,11 @@ const styles = {
     textAlign: 'center',
     color: 'grey'
   },
+  menu: {
+    position: 'absolute',
+    top: 20,
+    backgroundColor: 'white',
+    height: '400px',
+    width: '300px',
+  }
 }

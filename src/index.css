@@ -20,4 +20,60 @@ code {
 
 .logohover {
   transition: 1s ease;
+  animation: logoLoad 1.5s ease-out;
+}
+
+.nav {
+  animation: navLoad 1.5s ease;
+}
+
+.popin {
+  animation: textLoad 1.5s;
+}
+
+.navitem:hover {
+  transition: 1s ease;
+  border-bottom: 2px solid white;
+  transform: scaleX(1.1);
+}
+
+.menu {
+  animation: menuLoad 1s ease;
+}
+@keyframes logoLoad {
+  from {
+    opacity: 0;
+    transform: scale(.9);
+  } to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes navLoad {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  } to {
+    opacity: 1;
+  }
+}
+
+@keyframes textLoad {
+  from {
+    opacity: 0;
+    transform: translateX(-100px)
+  } to {
+    opacity: 1;
+  }
+}
+
+@keyframes menuLoad {
+  from {
+    opacity: 0;
+    transform: translateY(-20px)
+  } to {
+    opacity: 1;
+    transform: translateY(0px)
+  }
 }
