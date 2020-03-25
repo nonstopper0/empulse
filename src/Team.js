@@ -18,7 +18,7 @@ export default class Team extends React.Component {
                                     </div>
                                 </div>
                                 <div className="each-slide">
-                                    <div style={{'backgroundImage': ''}}>
+                                    <div style={{'backgroundImage': 'url("")'}}>
                                     </div>
                                 </div>
                             </Slide>
