@@ -115,7 +115,7 @@ const styles = {
     margin: '20px 10px 40px 10px',
     color: 'rgb(100,100,100)',
     backgroundColor: 'rgb(38,38,38)',
-    padding: 7,
+    padding: 10,
     borderRadius: 100,
   },
   menu: {

@@ -50,6 +50,11 @@ code {
 .menu {
   animation: menuLoad 1s ease;
 }
+
+#garageDoor {
+  transition: 1s ease;
+  animation: garageDoor 5s ease;
+}
 @keyframes logoLoad {
   from {
     opacity: 0;
@@ -57,6 +62,17 @@ code {
   } to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes garageDoor {
+  from {
+    opacity: 1;
+    transform: translateY(0px)
+  } to {
+    opacity: 1;
+    transform: translateY(-650px)
+    
   }
 }
 
