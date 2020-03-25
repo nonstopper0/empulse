@@ -1,36 +1,44 @@
 import React from 'react';
-import drift1 from './gallery/1.jpg'
-import drift3 from './gallery/3.jpg'
-import drift4 from './gallery/4.jpg'
-import drift5 from './gallery/5.jpg'
-import drift6 from './gallery/6.jpg'
-import drift7 from './gallery/7.jpg'
+import { Slide } from 'react-slideshow-image'
 
 export default class Team extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+        }
+    }
     render() {
         return (
             <React.Fragment>
-                <slider id="gallery" style={styles.galleryContainer}>
-                        <img style={styles.img} src={drift1}/>
-                        <img style={styles.img} src={drift6}/>
-                        <img style={styles.img} src={drift3}/>
-                        <img style={styles.img} src={drift4}/>
-                        <img style={styles.img} src={drift5}/>
-                        <img style={styles.img} src={drift7}/>
-                </slider>
+                <div style={{minWidth: '1000px', maxWidth: '1500px', marginTop: 70}} className="slide-container">
+                            <Slide {...slideProperties}>
+                                <div className="each-slide">
+                                    <div style={{backgroundImage: 'url("./gallery/7.jpg")'}}></div>
+                                </div>
+                                <div className="each-slide">
+                                    <div style={{backgroundImage: 'url("./gallery/2.jpg")'}}></div>
+                                </div>
+                                <div className="each-slide">
+                                    <div style={{backgroundImage: 'url("./gallery/5.jpg")'}}></div>
+                                </div>
+                                <div className="each-slide">
+                                    <div style={{backgroundImage: 'url("./gallery/4.jpg")'}}></div>
+                                </div>
+                                <div className="each-slide">
+                                    <div style={{backgroundImage: 'url("./gallery/6.jpg")'}}></div>
+                                </div>
+                            </Slide>
+             </div>
             </React.Fragment>
         )
     }
 }
 
-const styles = {
-    galleryContainer: {
-        overflow: 'hidden',
-        display: 'flex',
-        width: '100%',
-        minWidth: '1000px',
-        marginTop: 60,
-        margin: 0,
-        animation: '20s slider infinite'
-    }
+const slideProperties = {
+    duration: 4000,
+    transitionDuration: 1300,
+    infinite: true,
+    indicators: true,
+    arrows: true,
+    pauseOnHover: true,
 }
