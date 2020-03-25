@@ -1,7 +1,7 @@
 import React from 'react';
 import Playground from './playground.jpg'
-import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
-import GetAppIcon from '@material-ui/icons/GetApp';
+import { FaAngleDoubleRight } from 'react-icons/fa'
+import { MdFileDownload } from 'react-icons/md'
 import TandoBuddies from './tandobuddies.png'
 
 export default class Team extends React.Component {
@@ -12,18 +12,18 @@ export default class Team extends React.Component {
                     <h1>DOWNLOAD</h1>
                     <p>To play on our custom server you need to have custom files! See the links below for both the track and vehicle files</p>
                 </header>
-                <div style={styles.breaker}><DoubleArrowIcon style={{position: 'relative', left: '49%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
+                <div style={styles.breaker}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
                 <div style={styles.row}>
                     <div style={{display: 'flex', flexDirection: 'column', margin: 20, alignItems: 'center'}}>
                         <img style={styles.playground} src={Playground}></img>
-                        <a style={styles.button} target="_blank" href="https://drive.google.com/uc?id=0B7A5dRnNXcFUNGJhWHNzaEp6dXM&export=download">Drift Playground<GetAppIcon style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></GetAppIcon></a>
+                        <a style={styles.button} target="_blank" href="https://drive.google.com/uc?id=0B7A5dRnNXcFUNGJhWHNzaEp6dXM&export=download">Drift Playground<MdFileDownload style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></MdFileDownload></a>
                     </div>
                     <div style={{display: 'flex', flexDirection: 'column', margin: 20, alignItems: 'center'}}>
                     <img style={styles.playground} src={TandoBuddies}></img>
-                    <a style={styles.button} target="_blank" href="https://drive.google.com/uc?id=1_KtLGGFLDzQqm4YQmvui4H6qCIA_o30c&export=download">Tando Buddies<GetAppIcon style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></GetAppIcon></a>
+                    <a style={styles.button} target="_blank" href="https://drive.google.com/uc?id=1_KtLGGFLDzQqm4YQmvui4H6qCIA_o30c&export=download">Tando Buddies<MdFileDownload style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></MdFileDownload></a>
                     </div>
                 </div>
-                <div style={styles.breaker}><DoubleArrowIcon style={{position: 'relative', left: '49%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
+                <div style={styles.breaker}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
             </div>
         )
     }

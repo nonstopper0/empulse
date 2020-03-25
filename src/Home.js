@@ -3,9 +3,8 @@ import img from './varis.jpg'
 import logo from './empulse.png'
 import drift from './drift.png'
 import gridlife from './gridlife.jpg'
-import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
-import FlagIcon from '@material-ui/icons/Flag';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { FaAngleDoubleRight, FaFlagCheckered, } from 'react-icons/fa'
+import { MdExpandMore } from 'react-icons/md'
 const Scroll = require('react-scroll')
 const scroll = Scroll.animateScroll;
 
@@ -30,21 +29,21 @@ export default class Team extends React.Component {
                         <img className="logohover" onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse} style={styles.logo} src={logo}></img>
                         { !this.state.hover ? <p className="popin" style={styles.popup}>Driver focused, People oriented...</p> : null}
                     </div>
-                    <div onClick={()=>scroll.scrollTo(document.getElementById('img').clientHeight)} style={{position: 'absolute', top: '94%', left: '49%', color: 'white'}}><ExpandMoreIcon style={{fontSize: 40}}/></div>
+                    <div onClick={()=>scroll.scrollTo(document.getElementById('img').clientHeight)} style={{position: 'absolute', top: '94%', left: '50%', color: 'white', transform: 'translate(-50%)'}}><MdExpandMore style={{fontSize: 40}}/></div>
                 </div>
                 <div style={styles.content1}>
-                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><DoubleArrowIcon flip style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
+                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><FaAngleDoubleRight flip style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
                     <div style={styles.row}>
                         <div style={{display: 'flex', justifyContent: 'flex-start'}}>
                             <img src={gridlife} style={{width: '400px', marginRight: '20px'}} alt="drift"></img>
                             <div>
-                                <h2 style={{color: 'white', fontWeight: 'bold'}}>A team focused on Motorsport.<FlagIcon style={{position: 'relative', top: 2, left: 10, fontSize: 20, color: 'grey'}}></FlagIcon></h2>
+                                <h2 style={{color: 'white', fontWeight: 'bold'}}>A team focused on Motorsport.<FaFlagCheckered style={{position: 'relative', top: 2, left: 10, fontSize: 20, color: 'grey'}}></FaFlagCheckered></h2>
                                 <p style={styles.contentText}>Based in Colorado, Empulse is a community of drivers interested in using their cars to the fullest extent. 
                                 You can find Empulse at racetracks around Colorado including but not limited to: <span style={{fontWeight: 'bold'}}>High Plains Raceway, Pikes Peak International Raceway, and IMI motorsports complex.</span></p>
                             </div>
                         </div>
                     </div>
-                    <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><DoubleArrowIcon style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
+                    <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
                     <div style={styles.row}>
                         <div style={{display: 'flex', justifyContent: 'flex-end'}}>
                             <div>
@@ -55,7 +54,8 @@ export default class Team extends React.Component {
                             <img src={drift} style={{width: '400px', marginLeft: '20px'}} alt="drift"></img>
                         </div>
                     </div>
-                    <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><DoubleArrowIcon flip style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -10}}></DoubleArrowIcon></div>
+                    <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><FaAngleDoubleRight flip style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
+                    <button onClick={() => this.props.history.push('/team')} style={styles.garageButton}>View Garage</button>
                 </div>
             </div>
         )
@@ -128,11 +128,23 @@ const styles = {
     blob: {
         zIndex: 3,
         position: 'absolute',
-
         top: 100,
         height: 1000,
         width: 1000,
         backgroundColor: 'white',
         transform: 'skew(80deg)'
+    },
+    garageButton: {
+        position: 'relative',
+        left: '50%',
+        top: 10,
+        transform: 'translate(-50%)',
+        width: '140px',
+        height: '45px',
+        borderRadius: 100,
+        backgroundColor: 'rgb(130,0,0)',
+        color: 'white',
+        border: '2px solid rgb(90,0,0)',
+        fontSize: 20,
     }
 }

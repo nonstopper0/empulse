@@ -1,13 +1,11 @@
 import React from 'react';
 import {Route, Switch, HashRouter, BrowserRouter, Link} from 'react-router-dom'
-import InstagramIcon from '@material-ui/icons/Instagram';
-import YouTubeIcon from '@material-ui/icons/YouTube';
 import logo from './empulse.png'
 import Home from './Home.js'
 import Team from './Team.js'
 import Download from './Download.js'
 import Gallery from './Gallery.js'
-import { rgbToHex } from '@material-ui/core';
+import { FaDiscord, FaYoutube, FaInstagram } from 'react-icons/fa'
 
 export default class App extends React.Component {
   constructor() {
@@ -44,13 +42,17 @@ export default class App extends React.Component {
                   <p className="navitem" style={styles.navA} target="_blank">ASSETTO <span style={{color: 'red'}}>CORSA</span></p>
               </div>
               <p className="navitem" style={styles.navA}><Link to="/team" style={styles.link}>THE GARAGE</Link></p>
-              <a><InstagramIcon style={styles.icon}></InstagramIcon></a>
-              <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank"><YouTubeIcon style={styles.icon}></YouTubeIcon></a>
+              <a><FaInstagram style={styles.icon}></FaInstagram></a>
+              <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank"><FaYoutube style={styles.icon}></FaYoutube></a>
           </nav>
         
         </header>
         <footer style={styles.footer}>
           <small>&copy; Copyright 2020. Nathaniel Redmon</small>
+          <div style={{width: '100%'}}>
+            <a><FaInstagram style={styles.footerIcon}></FaInstagram></a>
+            <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank"><FaYoutube style={styles.footerIcon}></FaYoutube></a>
+          </div>
         </footer>
     </HashRouter>
     );
@@ -106,7 +108,15 @@ const styles = {
     paddingTop: '100px',
     minWidth: '1000px',
     textAlign: 'center',
-    color: 'grey'
+    color: 'grey',
+  },
+  footerIcon: {
+    fontSize: 30,
+    margin: '20px 10px 40px 10px',
+    color: 'rgb(100,100,100)',
+    backgroundColor: 'rgb(38,38,38)',
+    padding: 7,
+    borderRadius: 100,
   },
   menu: {
     paddingTop: '5px',
