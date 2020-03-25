@@ -42,7 +42,7 @@ export default class App extends React.Component {
                   <p className="navitem" style={styles.navA} target="_blank">ASSETTO <span style={{color: 'red'}}>CORSA</span></p>
               </div>
               <p className="navitem" style={styles.navA}><Link to="/team" style={styles.link}>THE GARAGE</Link></p>
-              <a><FaInstagram style={styles.icon}></FaInstagram></a>
+              <a href="https://discord.gg/j6EMR5r"><FaDiscord style={styles.icon}></FaDiscord></a>
               <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank"><FaYoutube style={styles.icon}></FaYoutube></a>
           </nav>
         
@@ -50,7 +50,7 @@ export default class App extends React.Component {
         <footer style={styles.footer}>
           <small>&copy; Copyright 2020. Nathaniel Redmon</small>
           <div style={{width: '100%'}}>
-            <a><FaInstagram style={styles.footerIcon}></FaInstagram></a>
+            <a href="https://discord.gg/j6EMR5r"><FaDiscord style={styles.footerIcon}></FaDiscord></a>
             <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank"><FaYoutube style={styles.footerIcon}></FaYoutube></a>
           </div>
         </footer>

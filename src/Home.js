@@ -3,7 +3,7 @@ import img from './varis.jpg'
 import logo from './empulse.png'
 import drift from './drift.png'
 import gridlife from './gridlife.jpg'
-import { FaAngleDoubleRight, FaFlagCheckered, } from 'react-icons/fa'
+import { FaAngleDoubleRight, FaFlagCheckered} from 'react-icons/fa'
 import { MdExpandMore } from 'react-icons/md'
 const Scroll = require('react-scroll')
 const scroll = Scroll.animateScroll;
