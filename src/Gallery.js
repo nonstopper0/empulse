@@ -11,24 +11,24 @@ export default class Team extends React.Component {
         return (
             <React.Fragment>
                 <div style={{minWidth: '1000px', maxWidth: '1500px', marginTop: 70}} className="slide-container">
-                            <Slide {...slideProperties}>
-                                <div className="each-slide">
-                                    <div style={{backgroundImage: 'url("./gallery/7.jpg")'}}></div>
-                                </div>
-                                <div className="each-slide">
-                                    <div style={{backgroundImage: 'url("./gallery/2.jpg")'}}></div>
-                                </div>
-                                <div className="each-slide">
-                                    <div style={{backgroundImage: 'url("./gallery/5.jpg")'}}></div>
-                                </div>
-                                <div className="each-slide">
-                                    <div style={{backgroundImage: 'url("./gallery/4.jpg")'}}></div>
-                                </div>
-                                <div className="each-slide">
-                                    <div style={{backgroundImage: 'url("./gallery/6.jpg")'}}></div>
-                                </div>
-                            </Slide>
-             </div>
+                    <Slide {...slideProperties}>
+                        <div className="each-slide">
+                            <div style={{backgroundImage: 'url("./gallery/7.jpg")'}}></div>
+                        </div>
+                        <div className="each-slide">
+                            <div style={{backgroundImage: 'url("./gallery/2.jpg")'}}></div>
+                        </div>
+                        <div className="each-slide">
+                            <div style={{backgroundImage: 'url("./gallery/5.jpg")'}}></div>
+                        </div>
+                        <div className="each-slide">
+                            <div style={{backgroundImage: 'url("./gallery/4.jpg")'}}></div>
+                        </div>
+                        <div className="each-slide">
+                            <div style={{backgroundImage: 'url("./gallery/6.jpg")'}}></div>
+                        </div>
+                    </Slide>
+                </div>
             </React.Fragment>
         )
     }
@@ -36,7 +36,7 @@ export default class Team extends React.Component {
 
 const slideProperties = {
     duration: 4000,
-    transitionDuration: 1300,
+    transitionDuration: 900,
     infinite: true,
     indicators: true,
     arrows: true,
