@@ -16,7 +16,7 @@ export default class Team extends React.Component {
                             <div style={{backgroundImage: 'url("./gallery/7.jpg")'}}></div>
                         </div>
                         <div className="each-slide">
-                            <div style={{backgroundImage: 'url("./gallery/2.jpg")'}}></div>
+                            <div style={{backgroundImage: 'url("./gallery/8.jpg")'}}></div>
                         </div>
                         <div className="each-slide">
                             <div style={{backgroundImage: 'url("./gallery/5.jpg")'}}></div>
