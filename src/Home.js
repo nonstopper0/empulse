@@ -23,7 +23,7 @@ export default class Team extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div style={{minWidth: '1000px', }}>
                 <div style={styles.container}>
                     <img src={img} id="img"  alt="background" style={styles.img}></img>
                     <div style={styles.maintext}>
@@ -58,13 +58,13 @@ export default class Team extends React.Component {
                     <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
                 </div>
                 <img style={styles.content2img} src={fullsize}></img>
-                <div style={{marginTop: 30, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', maxWidth: '1500px', margin: '30px auto 30px auto'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
+                <div style={{marginTop: 30, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '800px', maxWidth: '1500px', margin: '30px auto 30px auto'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
                 <div style={styles.content2}>
                     <h2>Join us on Discord!</h2>
                     <p>Click the link below to chat with us on our discord server!</p>
                     <a href="https://discord.gg/j6EMR5r" target="_blank" rel="noopener noreferrer"><FaDiscord style={styles.icon}></FaDiscord></a>
                 </div>
-                <div style={{marginTop: 30, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', maxWidth: '1500px', margin: '30px auto 30px auto'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
+                <div style={{marginTop: 30, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '600px', maxWidth: '1500px', margin: '30px auto 30px auto'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
             </div>
         )
     }
@@ -175,7 +175,10 @@ const styles = {
     },
     icon: {
         fontSize: 128,
-        margin: 20,
-        color: '#12B1E2'
+        margin: 25,
+        border: '1px solid grey',
+        padding: 20,
+        borderRadius: 20,
+        color: '#7289da'
     }
 }
