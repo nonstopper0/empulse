@@ -64,6 +64,7 @@ export default class Team extends React.Component {
                     <p>Click the link below to chat with us on our discord server!</p>
                     <a href="https://discord.gg/j6EMR5r" target="_blank" rel="noopener noreferrer"><FaDiscord style={styles.icon}></FaDiscord></a>
                 </div>
+                <div style={{marginTop: 30, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', maxWidth: '1500px', margin: '30px auto 30px auto'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
             </div>
         )
     }
