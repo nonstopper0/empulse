@@ -8,9 +8,9 @@ export default class Team extends React.Component {
         return (
             <React.Fragment>
                 <div style={styles.garageContainer}>
-                    <img id="garage" style={styles.garage} src={Garage}></img>
+                    <img alt="garage" id="garage" style={styles.garage} src={Garage}></img>
                     <div style={styles.doorContainer} >
-                        <img id="garageDoor" style={styles.garageDoor} src={GarageDoor}></img>
+                        <img alt="garagedoor" id="garageDoor" style={styles.garageDoor} src={GarageDoor}></img>
                         <div className="slide-container">
                             <Slide {...slideProperties}>
                                 <div className="each-slide">

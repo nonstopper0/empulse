@@ -24,15 +24,15 @@ export default class Team extends React.Component {
         return (
             <div>
                 <div style={styles.container}>
-                    <img src={img} id="img" style={styles.img}></img>
+                    <img src={img} id="img"  alt="background" style={styles.img}></img>
                     <div style={styles.maintext}>
-                        <img className="logohover" onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse} style={styles.logo} src={logo}></img>
+                        <img alt="main logo" className="logohover" onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse} style={styles.logo} src={logo}></img>
                         { !this.state.hover ? <p className="popin" style={styles.popup}>Driver focused, People oriented...</p> : null}
                     </div>
                     <div onClick={()=>scroll.scrollTo(document.getElementById('img').clientHeight)} style={{position: 'absolute', top: '94%', left: '50%', color: 'white', transform: 'translate(-50%)'}}><MdExpandMore style={{fontSize: 40}}/></div>
                 </div>
                 <div style={styles.content1}>
-                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><FaAngleDoubleRight flip style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
+                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
                     <div style={styles.row}>
                         <div style={{display: 'flex', justifyContent: 'flex-start'}}>
                             <img src={gridlife} style={{width: '400px', marginRight: '20px'}} alt="drift"></img>
@@ -51,10 +51,10 @@ export default class Team extends React.Component {
                                 <p style={styles.contentText}>Community is of the highest importance within Empulse. 
                                 When we arent there in person, we are online connecting with our members through youtube and simulations like Assetto Corsa. Interested in being a part of our Assetto Corsa community? Click the Assetto corsa tab above!</p>
                             </div>
-                            <img src={drift} style={{width: '400px', marginLeft: '20px'}} alt="drift"></img>
+                        <img alt="cars drifting" src={drift} style={{width: '400px', marginLeft: '20px'}}></img>
                         </div>
                     </div>
-                    <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><FaAngleDoubleRight flip style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
+                    <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
                     <button onClick={() => this.props.history.push('/team')} style={styles.garageButton}>View Garage</button>
                 </div>
             </div>

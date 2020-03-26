@@ -1,11 +1,11 @@
 import React from 'react';
-import {Route, Switch, HashRouter, BrowserRouter, Link} from 'react-router-dom'
+import {Route, HashRouter, Link} from 'react-router-dom'
 import logo from './empulse.png'
 import Home from './Home.js'
 import Team from './Team.js'
 import Download from './Download.js'
 import Gallery from './Gallery.js'
-import { FaDiscord, FaYoutube, FaInstagram } from 'react-icons/fa'
+import { FaDiscord, FaYoutube } from 'react-icons/fa'
 
 export default class App extends React.Component {
   constructor() {
@@ -39,11 +39,11 @@ export default class App extends React.Component {
                   : 
                   null
                   }
-                  <p className="navitem" style={styles.navA} target="_blank">ASSETTO <span style={{color: 'red'}}>CORSA</span></p>
+                  <p className="navitem" style={styles.navA}>ASSETTO <span style={{color: 'red'}}>CORSA</span></p>
               </div>
               <p className="navitem" style={styles.navA}><Link to="/team" style={styles.link}>THE GARAGE</Link></p>
-              <a href="https://discord.gg/j6EMR5r"><FaDiscord style={styles.icon}></FaDiscord></a>
-              <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank"><FaYoutube style={styles.icon}></FaYoutube></a>
+              <a href="https://discord.gg/j6EMR5r" target="_blank" rel="noopener noreferrer"><FaDiscord style={styles.icon}></FaDiscord></a>
+              <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank" rel="noopener noreferrer"><FaYoutube style={styles.icon}></FaYoutube></a>
           </nav>
         
         </header>
@@ -51,7 +51,7 @@ export default class App extends React.Component {
           <small>&copy; Copyright 2020. Nathaniel Redmon</small>
           <div style={{width: '100%'}}>
             <a href="https://discord.gg/j6EMR5r"><FaDiscord style={styles.footerIcon}></FaDiscord></a>
-            <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank"><FaYoutube style={styles.footerIcon}></FaYoutube></a>
+            <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank" rel="noopener noreferrer"><FaYoutube style={styles.footerIcon}></FaYoutube></a>
           </div>
         </footer>
     </HashRouter>
