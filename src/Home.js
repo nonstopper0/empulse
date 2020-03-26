@@ -3,7 +3,8 @@ import img from './varis.jpg'
 import logo from './empulse.png'
 import drift from './drift.png'
 import gridlife from './gridlife.jpg'
-import { FaAngleDoubleRight, FaFlagCheckered} from 'react-icons/fa'
+import fullsize from './fullsize.jpg'
+import { FaAngleDoubleRight, FaFlagCheckered, FaDiscord} from 'react-icons/fa'
 import { MdExpandMore } from 'react-icons/md'
 const Scroll = require('react-scroll')
 const scroll = Scroll.animateScroll;
@@ -55,7 +56,13 @@ export default class Team extends React.Component {
                         </div>
                     </div>
                     <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
-                    <button onClick={() => this.props.history.push('/team')} style={styles.garageButton}>View Garage</button>
+                </div>
+                <img style={styles.content2img} src={fullsize}></img>
+                <div style={{marginTop: 30, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', maxWidth: '1500px', margin: '30px auto 30px auto'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
+                <div style={styles.content2}>
+                    <h2>Join us on Discord!</h2>
+                    <p>Click the link below to chat with us on our discord server!</p>
+                    <a href="https://discord.gg/j6EMR5r" target="_blank" rel="noopener noreferrer"><FaDiscord style={styles.icon}></FaDiscord></a>
                 </div>
             </div>
         )
@@ -134,6 +141,24 @@ const styles = {
         backgroundColor: 'white',
         transform: 'skew(80deg)'
     },
+    content2: {
+        position: 'relative',
+        minWidth: '1000px',
+        flexWrap: 'wrap',
+        height: '300px',
+        overflow: 'hidden',
+        textAlign: 'center',
+        color: 'white',
+    },
+    content2img: {
+        width: '100%',
+        maxHeight: '600px',
+        opacity: 1,
+        objectFit: 'cover',
+    },
+    content2imgContainer: {
+        position: 'absolute',
+    },
     garageButton: {
         position: 'relative',
         left: '50%',
@@ -146,5 +171,10 @@ const styles = {
         color: 'white',
         border: '2px solid rgb(90,0,0)',
         fontSize: 20,
+    },
+    icon: {
+        fontSize: 128,
+        margin: 20,
+        color: '#12B1E2'
     }
 }
