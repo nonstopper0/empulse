@@ -105,7 +105,7 @@ const styles = {
   footer: {
     margin: '0 auto',
     height: '100px',
-    paddingTop: '100px',
+    padding: '100px 0px 100px 0px',
     minWidth: '1000px',
     textAlign: 'center',
     color: 'grey',

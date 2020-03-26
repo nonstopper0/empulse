@@ -153,7 +153,7 @@ const styles = {
     },
     content2img: {
         width: '100%',
-        maxHeight: '600px',
+        maxHeight: '500px',
         opacity: 1,
         objectFit: 'cover',
     },
@@ -175,10 +175,7 @@ const styles = {
     },
     icon: {
         fontSize: 128,
-        margin: 25,
-        border: '1px solid grey',
-        padding: 20,
-        borderRadius: 20,
+        margin: 45,
         color: '#7289da'
     }
 }
