@@ -157,7 +157,7 @@ const styles = {
     },
     frsimg: {
         width: '100%',
-        maxHeight: '500px',
+        maxHeight: '600px',
         marginBottom: '10px',
         opacity: 1,
         objectFit: 'cover',
