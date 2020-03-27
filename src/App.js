@@ -64,10 +64,11 @@ const styles = {
     zIndex: 2,
     position: 'fixed',
     height: '60px',
-    backgroundColor: 'rgb(38,38,38)',
+    backgroundColor: 'rgb(28,28,28)',
     width: '100%',
     top: 0,
     minWidth: '1000px',
+    borderBottom: '5px solid rgb(23,23,23)'
   },
   logo: {
     position: 'relative',
@@ -104,6 +105,7 @@ const styles = {
   },
   footer: {
     margin: '0 auto',
+    marginTop: '80px',
     height: '100px',
     padding: '100px 0px 100px 0px',
     minWidth: '1000px',
@@ -127,7 +129,7 @@ const styles = {
     alignContent: 'flex-start',
     top: 35,
     left: 115,
-    backgroundColor: 'rgb(38,38,38)',
+    backgroundColor: 'rgb(28,28,28)',
     height: '60px',
     width: '160px',
     overflow: 'hidden',

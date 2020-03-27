@@ -30,13 +30,13 @@ export default class Team extends React.Component {
                         <img alt="main logo" className="logohover" onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse} style={styles.logo} src={logo}></img>
                         { !this.state.hover ? <p className="popin" style={styles.popup}>Driver focused, People oriented...</p> : null}
                     </div>
-                    <div onClick={()=>scroll.scrollTo(document.getElementById('img').clientHeight)} style={{position: 'absolute', top: '94%', left: '50%', color: 'white', transform: 'translate(-50%)'}}><MdExpandMore style={{fontSize: 40}}/></div>
+                    <div onClick={()=>scroll.scrollTo(document.getElementById('img').clientHeight-60)} style={{position: 'absolute', top: '94%', left: '50%', color: 'white', transform: 'translate(-50%)'}}><MdExpandMore style={{fontSize: 40}}/></div>
                 </div>
                 <div style={styles.content1}>
-                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
+                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '1500px'}}></div>
                     <div style={styles.row}>
                         <div style={{display: 'flex', justifyContent: 'flex-start'}}>
-                            <img src={gridlife} style={{width: '400px', marginRight: '20px'}} alt="drift"></img>
+                            <img src={gridlife} style={{width: '400px', marginRight: '20px', paddingLeft: 20, borderLeft: '2px solid white'}} alt="drift"></img>
                             <div>
                                 <h2 style={{color: 'white', fontWeight: 'bold'}}>A team focused on Motorsport.<FaFlagCheckered style={{position: 'relative', top: 2, left: 10, fontSize: 20, color: 'grey'}}></FaFlagCheckered></h2>
                                 <p style={styles.contentText}>Based in Colorado, Empulse is a community of drivers interested in using their cars to the fullest extent. 
@@ -44,27 +44,23 @@ export default class Team extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
+                    <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '1500px'}}></div>
+                </div>
+                <img style={styles.content2img} src={fullsize}></img>
+                <div style={{marginTop: 40, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '1500px', margin: '30px auto 30px auto'}}></div>
+                <div style={styles.content2}>
                     <div style={styles.row}>
                         <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+                        <img alt="cars drifting" src={drift} style={{width: '400px', marginRight: '20px', paddingLeft: 20, borderLeft: '2px solid white'}}></img>
                             <div>
                                 <h2 style={{color: 'white', fontWeight: 'bold'}}>What we do.</h2>
                                 <p style={styles.contentText}>Community is of the highest importance within Empulse. 
                                 When we arent there in person, we are online connecting with our members through youtube and simulations like Assetto Corsa. Interested in being a part of our Assetto Corsa community? Click the Assetto corsa tab above!</p>
                             </div>
-                        <img alt="cars drifting" src={drift} style={{width: '400px', marginLeft: '20px'}}></img>
                         </div>
                     </div>
-                    <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
                 </div>
-                <img style={styles.content2img} src={fullsize}></img>
-                <div style={{marginTop: 30, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '800px', maxWidth: '1500px', margin: '30px auto 30px auto'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
-                <div style={styles.content2}>
-                    <h2>Join us on Discord!</h2>
-                    <p>Click the link below to chat with us on our discord server!</p>
-                    <a href="https://discord.gg/j6EMR5r" target="_blank" rel="noopener noreferrer"><FaDiscord style={styles.icon}></FaDiscord></a>
-                </div>
-                <div style={{marginTop: 30, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '600px', maxWidth: '1500px', margin: '30px auto 30px auto'}}><FaAngleDoubleRight style={{position: 'relative', left: '50%', color: 'rgb(48,48,48)', top: -8, transform: 'translate(-50%)'}}></FaAngleDoubleRight></div>
+                <div style={{marginTop: 30, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', width: '1500px', margin: '20px auto 20px auto'}}></div>
             </div>
         )
     }
@@ -120,8 +116,7 @@ const styles = {
         width: '100%',
         maxWidth: '1500px',
         minWidth: '1000px',
-        height: '800px',
-        backgroundColor: 'rgb(18,18,18)',
+        height: '500px',
     },
     row: {
         padding: '0px 100px 0px 100px',
@@ -131,7 +126,8 @@ const styles = {
     },
     contentText: {
         color: 'white',
-        fontSize: 17
+        fontSize: 17,
+        maxWidth: '800px',
     },
     blob: {
         zIndex: 3,
@@ -143,17 +139,19 @@ const styles = {
         transform: 'skew(80deg)'
     },
     content2: {
-        position: 'relative',
-        minWidth: '1000px',
+        margin: '0 auto',
+        display: 'flex',
+        alignItems: 'center',
         flexWrap: 'wrap',
-        height: '300px',
-        overflow: 'hidden',
-        textAlign: 'center',
-        color: 'white',
+        width: '100%',
+        maxWidth: '1500px',
+        minWidth: '1000px',
+        height: '350px',
     },
     content2img: {
         width: '100%',
         maxHeight: '500px',
+        marginBottom: '10px',
         opacity: 1,
         objectFit: 'cover',
     },
