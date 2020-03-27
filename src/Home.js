@@ -46,7 +46,10 @@ export default class Team extends React.Component {
                     </div>
                     <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '1500px'}}></div>
                 </div>
-                <img style={styles.content2img} src={fullsize}></img>
+                <div style={styles.frsContainer}>
+                    <p style={styles.frsText}><span style={{color: 'red'}}></span>RACE. DRIFT. SHOW.</p>
+                    <img style={styles.frsimg} src={fullsize}></img>
+                </div>
                 <div style={{marginTop: 40, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '1500px', margin: '30px auto 30px auto'}}></div>
                 <div style={styles.content2}>
                     <div style={styles.row}>
@@ -61,6 +64,7 @@ export default class Team extends React.Component {
                     </div>
                 </div>
                 <div style={{marginTop: 30, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', width: '1500px', margin: '20px auto 20px auto'}}></div>
+                <button onClick={()=> {this.props.history.push('/team')}} style={styles.garageButton}>View Garage</button>
             </div>
         )
     }
@@ -148,20 +152,34 @@ const styles = {
         minWidth: '1000px',
         height: '350px',
     },
-    content2img: {
+    frsimg: {
         width: '100%',
         maxHeight: '500px',
         marginBottom: '10px',
         opacity: 1,
         objectFit: 'cover',
     },
-    content2imgContainer: {
-        position: 'absolute',
+    frsContainer: {
+        position: 'relative'
+    },
+    frsText: {
+        textAlign: 'center',
+        position: 'absolute', 
+        top: '35%', 
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        color: 'white',
+        fontSize: 90,
+        width: '100%',
+        fontFamily: 'Arial',
+        fontWeight: 'bold',
+        mixBlendMode: 'overlay',
+        letterSpacing: '12px',
     },
     garageButton: {
         position: 'relative',
         left: '50%',
-        top: 10,
+        top: 50,
         transform: 'translate(-50%)',
         width: '140px',
         height: '45px',
