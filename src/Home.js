@@ -191,7 +191,10 @@ const styles = {
     },
     icon: {
         fontSize: 128,
-        margin: 45,
+        margin: 25,
+        border: '1px solid grey',
+        padding: 20,
+        borderRadius: 20,
         color: '#7289da'
     }
 }

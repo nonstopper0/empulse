@@ -58,7 +58,7 @@ const styles = {
     breaker: {
         backgroundColor: 'rgb(48,48,48)', 
         height: '1px', 
-        width: '75%', 
+        width: '100%', 
         margin: '30px 0px 30px 0px'
     },
     button: {

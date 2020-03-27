@@ -107,7 +107,7 @@ const styles = {
     margin: '0 auto',
     marginTop: '80px',
     height: '100px',
-    padding: '100px 0px 100px 0px',
+    paddingTop: '100px',
     minWidth: '1000px',
     textAlign: 'center',
     color: 'grey',
