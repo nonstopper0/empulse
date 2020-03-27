@@ -90,6 +90,7 @@ const styles = {
         width: '100%',
         maxHeight: '100vh',
         objectFit: 'cover',
+        boxShadow: '0px 0px 80px black',
     },
     logo: {
         width: '600px',
@@ -160,6 +161,7 @@ const styles = {
         marginBottom: '10px',
         opacity: 1,
         objectFit: 'cover',
+        boxShadow: '0px 0px 80px black',
     },
     frsContainer: {
         position: 'relative'

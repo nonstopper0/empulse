@@ -108,9 +108,11 @@ const styles = {
     marginTop: '80px',
     height: '100px',
     padding: '100px 0px 100px 0px',
+    backgroundColor: 'rgb(0,0,0,.2)',
     minWidth: '1000px',
     textAlign: 'center',
     color: 'grey',
+    boxShadow: '0px 0px 80px rgb(0,0,0,.4)',
   },
   footerIcon: {
     fontSize: 30,
