@@ -12,18 +12,18 @@ export default class Team extends React.Component {
                     <h1>DOWNLOAD</h1>
                     <p>To play on our custom server you need to have custom files! See the links below for both the track and vehicle files</p>
                 </header>
-                <div style={styles.breaker}></div>
-                <div style={styles.row}>
+                <div className="bar" style={styles.breaker}></div>
+                <div className="download" style={styles.row}>
                     <div style={{display: 'flex', flexDirection: 'column', margin: 20, alignItems: 'center'}}>
                         <img alt="playground" style={styles.playground} src={Playground}></img>
-                        <a style={styles.button} target="_blank" rel="noopener noreferrer" href="https://drive.google.com/uc?id=0B7A5dRnNXcFUNGJhWHNzaEp6dXM&export=download">Drift Playground<MdFileDownload style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></MdFileDownload></a>
+                        <a className="downloadButton" style={styles.button} target="_blank" rel="noopener noreferrer" href="https://drive.google.com/uc?id=0B7A5dRnNXcFUNGJhWHNzaEp6dXM&export=download">Drift Playground<MdFileDownload style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></MdFileDownload></a>
                     </div>
                     <div style={{display: 'flex', flexDirection: 'column', margin: 20, alignItems: 'center'}}>
                     <img alt="tando buddies cars" style={styles.playground} src={TandoBuddies}></img>
-                    <a style={styles.button} target="_blank" rel="noopener noreferrer" href="https://drive.google.com/uc?id=1_KtLGGFLDzQqm4YQmvui4H6qCIA_o30c&export=download">Tando Buddies<MdFileDownload style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></MdFileDownload></a>
+                    <a className="downloadButton" style={styles.button} target="_blank" rel="noopener noreferrer" href="https://drive.google.com/uc?id=1_KtLGGFLDzQqm4YQmvui4H6qCIA_o30c&export=download">Tando Buddies<MdFileDownload style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></MdFileDownload></a>
                     </div>
                 </div>
-                <div style={styles.breaker}></div>
+                <div className="bar" style={styles.breaker}></div>
             </div>
         )
     }

@@ -33,7 +33,7 @@ export default class Team extends React.Component {
                     <div onClick={()=>scroll.scrollTo(document.getElementById('img').clientHeight-60)} style={{position: 'absolute', top: '94%', left: '50%', color: 'white', transform: 'translate(-50%)'}}><MdExpandMore style={{fontSize: 40}}/></div>
                 </div>
                 <div style={styles.content1}>
-                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '1500px'}}></div>
+                <div className="bar" style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '1500px'}}></div>
                     <div style={styles.row}>
                         <div style={{display: 'flex', justifyContent: 'flex-start'}}>
                             <img src={gridlife} style={{width: '400px', marginRight: '20px', paddingLeft: 20, borderLeft: '2px solid white'}} alt="drift"></img>
@@ -44,7 +44,7 @@ export default class Team extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '1500px'}}></div>
+                    <div className="bar" style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '1500px'}}></div>
                 </div>
                 <div style={styles.frsContainer}>
                     <div style={styles.frsText}>
@@ -53,7 +53,7 @@ export default class Team extends React.Component {
                     </div>
                     <img style={styles.frsimg} src={fullsize}></img>
                 </div>
-                <div style={{marginTop: 40, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', maxWidth: '1500px', margin: '30px auto 30px auto'}}></div>
+                <div className="bar" style={{marginTop: 40, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', maxWidth: '1500px', margin: '30px auto 30px auto'}}></div>
                 <div style={styles.content2}>
                     <div style={styles.row}>
                         <div style={{display: 'flex', justifyContent: 'flex-end'}}>
@@ -66,7 +66,7 @@ export default class Team extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', maxWidth: '1500px', margin: '20px auto 20px auto'}}></div>
+                <div className="bar" style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', maxWidth: '1500px', margin: '20px auto 20px auto'}}></div>
             </div>
         )
     }

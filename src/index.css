@@ -21,6 +21,18 @@ code {
   animation: logoLoad 1.5s ease-out;
 }
 
+.bar {
+  animation: logoLoad 2s ease-out;
+}
+
+.download {
+  animation: downLoad 2s ease-out;
+}
+
+.downloadButton {
+  animation: downLoadButton 2s ease-out;
+}
+
 .nav {
   animation: navLoad 2s ease-out;
 }
@@ -96,6 +108,24 @@ h3 {
   align-items: center;
   margin: 0;
   background: #000000;
+}
+
+@keyframes downLoad {
+  from {
+    opacity: 0;
+    transform: translateY(-20px)
+  } to {
+    opacity: 1;
+  }
+}
+
+@keyframes downLoadButton {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  } 50% {
+    opacity: .3;
+  }
 }
 
 @keyframes logoLoad {
