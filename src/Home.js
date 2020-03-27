@@ -47,10 +47,13 @@ export default class Team extends React.Component {
                     <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '1500px'}}></div>
                 </div>
                 <div style={styles.frsContainer}>
-                    <p style={styles.frsText}><span style={{color: 'red'}}></span>RACE. DRIFT. SHOW.</p>
+                    <div style={styles.frsText}>
+                    <p>JOIN NOW.</p>
+                    <a href="https://discord.gg/j6EMR5r" target="_blank" rel="noopener noreferrer" style={styles.garageButton}>HERE</a>
+                    </div>
                     <img style={styles.frsimg} src={fullsize}></img>
                 </div>
-                <div style={{marginTop: 40, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '1500px', margin: '30px auto 30px auto'}}></div>
+                <div style={{marginTop: 40, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', maxWidth: '1500px', margin: '30px auto 30px auto'}}></div>
                 <div style={styles.content2}>
                     <div style={styles.row}>
                         <div style={{display: 'flex', justifyContent: 'flex-end'}}>
@@ -63,8 +66,7 @@ export default class Team extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div style={{marginTop: 30, backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', width: '1500px', margin: '20px auto 20px auto'}}></div>
-                <button onClick={()=> {this.props.history.push('/team')}} style={styles.garageButton}>View Garage</button>
+                <div style={{backgroundColor: 'rgb(48,48,48)', height: '1px', width: '100%', maxWidth: '1500px', margin: '20px auto 20px auto'}}></div>
             </div>
         )
     }
@@ -165,7 +167,7 @@ const styles = {
     frsText: {
         textAlign: 'center',
         position: 'absolute', 
-        top: '35%', 
+        top: '50%', 
         left: '50%',
         transform: 'translate(-50%, -50%)',
         color: 'white',
@@ -173,20 +175,17 @@ const styles = {
         width: '100%',
         fontFamily: 'Arial',
         fontWeight: 'bold',
-        mixBlendMode: 'overlay',
-        letterSpacing: '12px',
     },
     garageButton: {
-        position: 'relative',
-        left: '50%',
-        top: 50,
+        position: 'absolute',
         transform: 'translate(-50%)',
-        width: '140px',
-        height: '45px',
+        padding: 10,
+        textDecoration: 'none',
+        color: 'rgb(89,89,89)',
+        top: 200,
+        width: 80,
         borderRadius: 100,
-        backgroundColor: 'rgb(130,0,0)',
-        color: 'white',
-        border: '2px solid rgb(90,0,0)',
+        backgroundColor: 'white',
         fontSize: 20,
     },
     icon: {

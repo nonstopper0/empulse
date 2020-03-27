@@ -50,7 +50,7 @@ export default class App extends React.Component {
         <footer style={styles.footer}>
           <small>&copy; Copyright 2020. Nathaniel Redmon</small>
           <div style={{width: '100%'}}>
-            <a href="https://discord.gg/j6EMR5r"><FaDiscord style={styles.footerIcon}></FaDiscord></a>
+            <a href="https://discord.gg/j6EMR5r" target="_blank" rel="noopener noreferrer"><FaDiscord style={styles.footerIcon}></FaDiscord></a>
             <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank" rel="noopener noreferrer"><FaYoutube style={styles.footerIcon}></FaYoutube></a>
           </div>
         </footer>
