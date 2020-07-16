@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf156c0f25a5f846c642e99d38ab8d34",
+    "revision": "dba883beb671b747cc0e248103b7e101",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.b328fd89.chunk.css"
   },
   {
-    "revision": "df8e21389d8e4cd2c26d",
+    "revision": "c7c0b805437555bcd620",
     "url": "/static/css/main.0d4bf416.chunk.css"
   },
   {
@@ -20,12 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.c085f0d8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "df8e21389d8e4cd2c26d",
-    "url": "/static/js/main.de09d41e.chunk.js"
+    "revision": "c7c0b805437555bcd620",
+    "url": "/static/js/main.f6f33061.chunk.js"
   },
   {
     "revision": "59584b3c81666be6d4d9",
     "url": "/static/js/runtime-main.24a402bf.js"
+  },
+  {
+    "revision": "603f0b52963e56663a5b712f3d0a7f2e",
+    "url": "/static/media/Minami.603f0b52.jpg"
   },
   {
     "revision": "786c143f87f4c514acf92c95d07e2e78",
@@ -50,10 +54,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7c9c3ed038330ea991b76cb26d70fa23",
     "url": "/static/media/gridlife.7c9c3ed0.jpg"
-  },
-  {
-    "revision": "9735f56f4a973c790a6742b36df193f7",
-    "url": "/static/media/playground.9735f56f.jpg"
   },
   {
     "revision": "9fb6506bc7f43e246d35edf82e027d1b",
