@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.0d4bf416.chunk.css",
-    "main.js": "/static/js/main.f6f33061.chunk.js",
-    "main.js.map": "/static/js/main.f6f33061.chunk.js.map",
+    "main.js": "/static/js/main.46eecb09.chunk.js",
+    "main.js.map": "/static/js/main.46eecb09.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.24a402bf.js",
     "runtime-main.js.map": "/static/js/runtime-main.24a402bf.js.map",
     "static/css/2.b328fd89.chunk.css": "/static/css/2.b328fd89.chunk.css",
     "static/js/2.c085f0d8.chunk.js": "/static/js/2.c085f0d8.chunk.js",
     "static/js/2.c085f0d8.chunk.js.map": "/static/js/2.c085f0d8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2343555bbc288052117961133bd6a8cc.js": "/precache-manifest.2343555bbc288052117961133bd6a8cc.js",
+    "precache-manifest.017f04d81c16134c8009fa193aa50d17.js": "/precache-manifest.017f04d81c16134c8009fa193aa50d17.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.b328fd89.chunk.css.map": "/static/css/2.b328fd89.chunk.css.map",
     "static/css/main.0d4bf416.chunk.css.map": "/static/css/main.0d4bf416.chunk.css.map",
@@ -21,7 +21,7 @@
     "static/media/garagedoor.png": "/static/media/garagedoor.030632d1.png",
     "static/media/garagedoor2.png": "/static/media/garagedoor2.ccd0151a.png",
     "static/media/gridlife.jpg": "/static/media/gridlife.7c9c3ed0.jpg",
-    "static/media/tandobuddies.png": "/static/media/tandobuddies.9fb6506b.png",
+    "static/media/slideboizz.png": "/static/media/slideboizz.108b21d1.png",
     "static/media/varis.jpg": "/static/media/varis.0a3f0910.jpg"
   },
   "entrypoints": [
@@ -29,6 +29,6 @@
     "static/css/2.b328fd89.chunk.css",
     "static/js/2.c085f0d8.chunk.js",
     "static/css/main.0d4bf416.chunk.css",
-    "static/js/main.f6f33061.chunk.js"
+    "static/js/main.46eecb09.chunk.js"
   ]
 }
