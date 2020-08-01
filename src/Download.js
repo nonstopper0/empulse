@@ -2,7 +2,7 @@ import React from 'react';
 import Minami from './Minami.jpg'
 import { FaAngleDoubleRight } from 'react-icons/fa'
 import { MdFileDownload } from 'react-icons/md'
-import TandoBuddies from './tandobuddies.png'
+import SlideBoizz from './slideboizz.png'
 
 export default class Team extends React.Component {
     render() {
@@ -19,8 +19,8 @@ export default class Team extends React.Component {
                         <a className="downloadButton" style={styles.button} target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/0B7A5dRnNXcFUTUFrcUhwSTcxdkU/view">Ebisu Minami<MdFileDownload style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></MdFileDownload></a>
                     </div>
                     <div style={{display: 'flex', flexDirection: 'column', margin: 20, alignItems: 'center'}}>
-                    <img alt="tando buddies cars" style={styles.playground} src={TandoBuddies}></img>
-                    <a className="downloadButton" style={styles.button} target="_blank" rel="noopener noreferrer" href="https://drive.google.com/uc?id=1_KtLGGFLDzQqm4YQmvui4H6qCIA_o30c&export=download">Tando Buddies<MdFileDownload style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></MdFileDownload></a>
+                    <img alt="slide boizz car pack" style={styles.playground} src={SlideBoizz}></img>
+                    <a className="downloadButton" style={styles.button} target="_blank" rel="noopener noreferrer" href="https://drive.google.com/uc?id=1GuBsGuz-pkpSqNrxhGqXfrW67-Ok_VZi&export=download">Slide boizzz<MdFileDownload style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></MdFileDownload></a>
                     </div>
                 </div>
                 <div className="bar" style={styles.breaker}></div>
