@@ -16,7 +16,7 @@ export default class Team extends React.Component {
                 <div className="download" style={styles.row}>
                     <div style={{display: 'flex', flexDirection: 'column', margin: 20, alignItems: 'center'}}>
                         <img alt="playground" style={styles.playground} src={Minami}></img>
-                        <a className="downloadButton" style={styles.button} target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/0B7A5dRnNXcFUTUFrcUhwSTcxdkU/view">Ebisu Minami<MdFileDownload style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></MdFileDownload></a>
+                        <a className="downloadButton" style={styles.button} target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1kHRmJ5i9WzZGs0IKKQeVfv1ByusUjVj7/view">Ebisu Minami<MdFileDownload style={{fontSize: 30, position: 'relative', top: 5, left: 5, color: 'grey'}}></MdFileDownload></a>
                     </div>
                     <div style={{display: 'flex', flexDirection: 'column', margin: 20, alignItems: 'center'}}>
                     <img alt="slide boizz car pack" style={styles.playground} src={SlideBoizz}></img>

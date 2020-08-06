@@ -13,10 +13,19 @@ export default class Team extends React.Component {
                 <div style={{minWidth: '1000px', maxWidth: '1500px', marginTop: 70}} className="slide-container">
                     <Slide {...slideProperties}>
                         <div className="each-slide">
-                            <div style={{backgroundImage: 'url("./gallery/7.jpg")'}}></div>
+                            <div style={{backgroundImage: 'url("./gallery/slide2.jpg")'}}></div>
+                        </div>
+                        <div className="each-slide">
+                            <div style={{backgroundImage: 'url("./gallery/slide1.jpg")'}}></div>
                         </div>
                         <div className="each-slide">
                             <div style={{backgroundImage: 'url("./gallery/8.jpg")'}}></div>
+                        </div>
+                        <div className="each-slide">
+                            <div style={{backgroundImage: 'url("./gallery/slide3.jpg")'}}></div>
+                        </div>
+                        <div className="each-slide">
+                            <div style={{backgroundImage: 'url("./gallery/slide4.jpg")'}}></div>
                         </div>
                         <div className="each-slide">
                             <div style={{backgroundImage: 'url("./gallery/5.jpg")'}}></div>
@@ -26,6 +35,9 @@ export default class Team extends React.Component {
                         </div>
                         <div className="each-slide">
                             <div style={{backgroundImage: 'url("./gallery/6.jpg")'}}></div>
+                        </div>
+                        <div className="each-slide">
+                            <div style={{backgroundImage: 'url("./gallery/7.jpg")'}}></div>
                         </div>
                     </Slide>
                 </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import img from './varis.jpg'
 import logo from './empulse.png'
-import drift from './drift.png'
+import drift from './drift.jpg'
 import gridlife from './gridlife.jpg'
 import fullsize from './fullsize.jpg'
 import { FaAngleDoubleRight, FaFlagCheckered, FaDiscord} from 'react-icons/fa'
