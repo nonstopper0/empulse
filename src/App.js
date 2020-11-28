@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'
 import {Route, HashRouter, Link} from 'react-router-dom'
 import logo from './empulse.png'
 import Home from './Home.js'
@@ -26,32 +27,32 @@ export default class App extends React.Component {
             <Route exact path="/team" component={Team}/>
             <Route exact path="/ac/download" component={Download}/>
             <Route exact path="/ac/gallery" component={Gallery}/>
-        <header style={styles.headercontainer}>
-          <img src={logo} style={styles.logo} alt="empulse logo"></img>
-          <nav className='nav' style={styles.nav}>
-              <p className="navitem" style={styles.navA}><Link to="/" style={styles.link}>HOME</Link></p>
+        <header className="header-container">
+          <img src={logo} className="logo" alt="empulse logo"></img>
+          <nav>
+              <p className="navitem" ><Link to="/" className="link">HOME</Link></p>
               <div onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse}>
                   { this.state.hover ? 
-                  <div className='menu' style={styles.menu}>
-                      <p className="navB" style={styles.navB}><Link to="/ac/download" style={styles.link}>DOWNLOAD</Link></p>
-                      <p className="navB" style={styles.navB}><Link to="/ac/gallery" style={styles.link}>GALLERY</Link></p>
+                  <div className="menu">
+                      <p className="navB navitem" ><Link to="/ac/download" className="link">DOWNLOAD</Link></p>
+                      <p className="navB navitem" ><Link to="/ac/gallery"  className="link">GALLERY</Link></p>
                   </div> 
                   : 
                   null
                   }
-                  <p className="navitem" style={styles.navA}>ASSETTO <span style={{color: 'red'}}>CORSA</span></p>
+                  <p className="navitem navA">ASSETTO <span style={{color: 'red'}}>CORSA</span></p>
               </div>
-              <p className="navitem" style={styles.navA}><Link to="/team" style={styles.link}>THE GARAGE</Link></p>
-              <a href="https://discord.gg/j6EMR5r" target="_blank" rel="noopener noreferrer"><FaDiscord style={styles.icon}></FaDiscord></a>
-              <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank" rel="noopener noreferrer"><FaYoutube style={styles.icon}></FaYoutube></a>
+              <p className="navitem navA"><Link to="/team" className="link">THE GARAGE</Link></p>
+              <a href="https://discord.gg/j6EMR5r" target="_blank" rel="noopener noreferrer"><FaDiscord className="icon"></FaDiscord></a>
+              <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank" rel="noopener noreferrer"><FaYoutube className="icon"></FaYoutube></a>
           </nav>
         
         </header>
-        <footer style={styles.footer}>
+        <footer>
           <small>&copy; Copyright 2020. Nathaniel Redmon</small>
           <div style={{width: '100%'}}>
-            <a href="https://discord.gg/j6EMR5r" target="_blank" rel="noopener noreferrer"><FaDiscord style={styles.footerIcon}></FaDiscord></a>
-            <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank" rel="noopener noreferrer"><FaYoutube style={styles.footerIcon}></FaYoutube></a>
+            <a href="https://discord.gg/j6EMR5r" target="_blank" rel="noopener noreferrer"><FaDiscord className="footer-icon"></FaDiscord></a>
+            <a href="https://www.youtube.com/channel/UCA2BhFhrsyvPXxEuUuQpBMw?view_as=subscriber" target="_blank" rel="noopener noreferrer"><FaYoutube className="footer-icon"></FaYoutube></a>
           </div>
         </footer>
     </HashRouter>
@@ -60,16 +61,6 @@ export default class App extends React.Component {
 }
 
 const styles = {
-  headercontainer: {
-    zIndex: 2,
-    position: 'fixed',
-    height: '60px',
-    backgroundColor: 'rgb(28,28,28)',
-    width: '100%',
-    top: 0,
-    minWidth: '1000px',
-    borderBottom: '5px solid rgb(23,23,23)'
-  },
   logo: {
     position: 'relative',
     width: '135px',

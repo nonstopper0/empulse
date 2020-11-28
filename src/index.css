@@ -45,17 +45,6 @@ code {
   animation: textLoad 1.5s;
 }
 
-.navitem {
-  transition: 1s ease;
-  text-decoration: none;
-  color: white;
-}
-
-.navitem:hover {
-  transition: 1s ease;
-  transform: scaleX(1.1);
-}
-
 .menu {
   animation: menuLoad 1s ease;
 }
